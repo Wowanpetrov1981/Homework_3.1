@@ -54,10 +54,10 @@ public class Main {
 
     public static void task3() {
         byte studentsOfLyudmilaPavlovna = 23;
-        byte AnnaSergeevnaSStudents = 27;
+        byte annaSergeevnaSStudents = 27;
         byte studentsOfEkaterinaAndreevna = 30;
         short totalSheetsOfPaper = 480;
-        int totalStudents = studentsOfLyudmilaPavlovna + AnnaSergeevnaSStudents + studentsOfEkaterinaAndreevna;
+        int totalStudents = studentsOfLyudmilaPavlovna + annaSergeevnaSStudents + studentsOfEkaterinaAndreevna;
         int numberOfSheetsOfPaperPerStudent = totalSheetsOfPaper / totalStudents;
         System.out.println("На каждого ученика рассчитано " + numberOfSheetsOfPaperPerStudent + " листов бумаги");
         System.out.println();
@@ -97,13 +97,13 @@ public class Main {
         short quantityOfIceCream = 2;
         short numberOfEggs = 4;
         int weightOfBananas = numberOfBananas * 80;
-        int weightOfMilk = 105 / 100 * amountOfMilk;
+        float weightOfMilk = 105 / 100f * amountOfMilk;
         int weightOfIceCream = quantityOfIceCream * 100;
         int weightOfEggs = numberOfEggs * 70;
-        int weightOfTheSportsBreakfast = weightOfBananas + weightOfMilk + weightOfIceCream + weightOfEggs;
+        double weightOfTheSportsBreakfast = weightOfBananas + weightOfMilk + weightOfIceCream + weightOfEggs;
         System.out.println("Вес спорт-завтрака составляет " + weightOfTheSportsBreakfast + " грамм");
 
-        float weightOfTheSportsBreakfastInKilograms = weightOfTheSportsBreakfast / 1000f;
+        double weightOfTheSportsBreakfastInKilograms = weightOfTheSportsBreakfast / 1000f;
         System.out.println("Вес спорт-завтрака составляет " + weightOfTheSportsBreakfastInKilograms + " килограмм");
         System.out.println();
     }
@@ -126,17 +126,17 @@ public class Main {
         boolean workExperience = 4 > 3;
         float percentageOfSalaryIncrease = 1.10f;
         System.out.println("Если стаж работы свыше 3 лет " + workExperience + ", то зарплата повышается один раз за год в " + percentageOfSalaryIncrease + " раза");
-        int MashaSSalary = 67_760;
-        int DenisSSalary = 83_690;
-        int KristinaSSalary = 76_230;
-        double MashaSNewSalary = MashaSSalary * percentageOfSalaryIncrease;
-        double DenisSNewSalary = DenisSSalary * percentageOfSalaryIncrease;
-        double KristinaSNewSalary = KristinaSSalary * percentageOfSalaryIncrease;
-        double theDifferenceInMashaSIncome = MashaSNewSalary * 12 - MashaSSalary * 12;
-        System.out.println("Маша теперь получает " + MashaSNewSalary + " рублей. Годовой доход вырос на " + theDifferenceInMashaSIncome + " рублей");
-        double theDifferenceInDenisSIncome = DenisSNewSalary * 12 - DenisSSalary * 12;
-        System.out.println("Денис теперь получает " + DenisSNewSalary + " рублей. Годовой доход вырос на " + theDifferenceInDenisSIncome + " рублей");
-        double theDifferenceInKristinaSIncome = KristinaSNewSalary * 12 - KristinaSSalary * 12;
-        System.out.println("Кристина теперь получает " + KristinaSNewSalary + " рублей. Годовой доход вырос на " + theDifferenceInKristinaSIncome + " рублей");
+        int mashaSSalary = 67_760;
+        int denisSSalary = 83_690;
+        int kristinaSSalary = 76_230;
+        double mashaSNewSalary = mashaSSalary * percentageOfSalaryIncrease;
+        double denisSNewSalary = denisSSalary * percentageOfSalaryIncrease;
+        double kristinaSNewSalary = kristinaSSalary * percentageOfSalaryIncrease;
+        double theDifferenceInMashaSIncome = mashaSNewSalary * 12 - mashaSSalary * 12;
+        System.out.println("Маша теперь получает " + mashaSNewSalary + " рублей. Годовой доход вырос на " + theDifferenceInMashaSIncome + " рублей");
+        double theDifferenceInDenisSIncome = denisSNewSalary * 12 - denisSSalary * 12;
+        System.out.println("Денис теперь получает " + denisSNewSalary + " рублей. Годовой доход вырос на " + theDifferenceInDenisSIncome + " рублей");
+        double theDifferenceInKristinaSIncome = kristinaSNewSalary * 12 - kristinaSSalary * 12;
+        System.out.println("Кристина теперь получает " + kristinaSNewSalary + " рублей. Годовой доход вырос на " + theDifferenceInKristinaSIncome + " рублей");
     }
 }
